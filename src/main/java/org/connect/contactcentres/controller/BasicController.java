@@ -13,12 +13,7 @@ public abstract class BasicController {
 	@Autowired
 	protected IFunctionalityService functionalityService;
 	
-	// inject via application.properties
-    @Value("${welcome.message}")
-    protected String message;
-    
-    @Value("${date.format}")
-    protected String dtFormat;
+	 
 	
 	
 }
