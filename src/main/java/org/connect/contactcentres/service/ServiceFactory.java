@@ -86,7 +86,9 @@ public class ServiceFactory implements IServiceFactory {
 	
 	
 	protected  Map<String, List<TransferType>> searchTransferType(TransferLocations inventory) {
-		return inventory.getTransferType().stream().collect(Collectors.groupingBy(TransferType::getName) );
+		return inventory.getTransferType().stream().collect(
+				Collectors.groupingBy(TransferType::getName) 
+		);
 	}
 
 	@Override
