@@ -12,7 +12,4 @@ public abstract class BasicController {
 	@Autowired
 	protected IFunctionalityService functionalityService;
 	
-	 
-	
-	
 }
