@@ -30,23 +30,6 @@ public class ContactCentreTransferController extends BasicController{
 		return transfer;
     }
 	
-	/**
-	* Take a location name as input and enable / disable it from the calculated distribution.
-	*
-	* @param text  the text of the loctionName
-	*/
-	@GetMapping("/anableDisable/{loctionName}")
-    public TransferLocations anableDisableForLocationName(@PathVariable("loctionName") String loctionName) throws Exception {
-		log.info("Into anableDisableForLocationName");
-		functionalityService.anableDisableForLocationName(loctionName);
-		log.info("END anableDisableForLocationName");
-		return anableDisableForLocationName();
-    }
-	
-	 TransferLocations anableDisableForLocationName() throws Exception {
-			log.info("Into/End anableDisableForLocationName");
-			return functionalityService.getViewServiceCurrentLiveConfiguration();
-	 }
 	
 	
 	@PostMapping(value = "/saveTransferType")
